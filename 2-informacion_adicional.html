@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Información adicional</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/tiendaonline.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body class="bg-primary">
+    <div class="bg-warning text-white rounded fw-bold"  id="opciones">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="1-alta_de_clientes.html" class="nav-link text-success disabled">Datos de cliente 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="2-informacion_adicional.html" class="nav-link text-black"><u>Información adicional</u></a>
+            </li>
+            <li class="nav-item">
+                <a href="3-pedido.html" class="nav-link text-secondary disabled">Pedido</a>
+            </li>
+            <li class="nav-item">
+                <a href="4-datos_de_pago.html" class="nav-link text-secondary disabled">Datos de pago</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container col-8 mt-5 text-secondary bg-light rounded">
+        <br>
+        <h2>Información adicional</h2>
+            <form method="get" action="3-pedido.html" class="was-validated">
+                <div class="mb-3 mt-3">
+                    <label for="name" class="form-label">País:</label>
+                    <input type="text" name="text" id="text" class="form-control" placeholder="Enter your country" pattern="[a-zA-Z,ñ,Ñ\s]{2,20}" required>
+                    <div class="valid-feedback" class="text-white">Válido</div>
+                    <div class="invalid-feedback">Por favor, complete el país correctamente.</div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="number" class="form-label">Código getal (5 números): </label>
+                    <input type="text" name="text" id="text" class="form-control" placeholder="Enter your getal code" pattern="[0-9]{5,5}" required>
+                    <div class="valid-feedback">Válido.</div>
+                    <div class="invalid-feedback">Por favor, complete el código getal correctamente.</div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <label for="comment" class="form-label">Comentarios al transportista sobre la entrega:</label>
+                    <textarea type="text" name="text" id="comment" class="form-control" rows="5" ></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-success mb-2">Siguiente</button>
+            </form>
+    </div>
+    <footer class="bg-dark fixed-bottom text-white text-center rounded ">
+        <div class="text-light">
+        <h3><u>Datos de contacto</u></h3>
+            <p><em>El Atelier de Jaime </em></p>
+            <p>Calle: Calle San Juan de Mata 8 28012 Madrid.</p>
+            <p>Teléfono: (+34) 91 558 88 44 Email: info@atelierjaime.es</p>
+        </div>
+    </footer>
+</body>
+</html>

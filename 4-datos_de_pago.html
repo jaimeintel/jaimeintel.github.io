@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Datos de pago</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/tiendaonline.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body class="bg-primary">
+    <div class="bg-warning text-white rounded fw-bold"  id="opciones">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="1-alta_de_clientes.html" class="nav-link text-success disabled">Datos de cliente 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="2-informacion_adicional.html" class="nav-link text-success disabled">Información adicional  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="3-pedido.html" class="nav-link text-success disabled">Pedido 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="4-datos_de_pago.html" class="nav-link text-black"><u>Datos de pago</u></a>
+            </li>
+        </ul>
+    </div>
+    <div class="container col-8 mt-5 text-secondary bg-light rounded text-">
+        <br>
+        <h2>Seleccione su método de pago</h2>
+        <br><div class="container">
+            <ul class="nav nav-pills " role="tablist">
+                <li class="nav-item">
+                    <a href="#tarjeta" class="nav-link active" data-bs-toggle="pill">Tarjeta de crédito
+                        <img src="images/visa-mastercard-american-express-png-6.png" height="20px">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#paypal" class="nav-link" data-bs-toggle="pill">PayPal
+                        <img src="images/Paypal-Logo-PNG.png" height="20px">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#bizum" class="nav-link" data-bs-toggle="pill">Bizum
+                        <img src="images/bizum.png" height="25px">
+                    </a>
+                </li>
+            </ul>
+            <!-- un li por cada elemento-->
+            <!--- tab panes-->
+            <div class="tab-content">
+                <div class="container tab-pane active mt-3" id="tarjeta">
+                    <form method="get" action="5-pago_realizado.html" class="was-validated">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Número de tarjeta (16 números)</span>
+                            <input type="num" class="form-control" pattern="[0-9]{16}" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Caducidad (mm/yy)</span>
+                            <input type="month" class="form-control" pattern="[0-9]{2}+/[0-9{2}]" required>
+                            <span class="input-group-text">Codigo de seguridad / CVV</span>
+                            <input type="MON" class="form-control" pattern="[0-9]{3}" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">Titular de la tarjeta</span>
+                            <input type="text" class="form-control" pattern="[a-zA-Z\s]{3,20}" required>
+                        </div>
+                        <button type="submit" class="btn btn-success mb-2 ">Siguiente</button>
+                    </form>
+                </div>
+                <div class="container tab-pane mt-3" id="paypal">
+                    <div class="mb-3 mt-3 text-secondary">
+                        <form method="get" action="5-pago_realizado.html" class="was-validated">
+                        <label for="email" class="form-label">Correo electrónico:</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="ejemplo@ejemplo.com" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+                        <div class="valid-feedback">Válido.</div>
+                        <div class="invalid-feedback">Por favor, complete el correo electrónico correctamente.</div>
+                        <button type="submit" class="btn btn-success mb-2 mt-3">Siguiente</button>
+                    </form>
+                    </div>
+                </div>
+                <div class="container tab-pane mt-3" id="bizum">
+                    <div class="mb-3 mt-3 text-secondary">
+                        <form method="get" action="5-pago_realizado.html" class="was-validated">
+                        <label for="email" class="form-label">Número de teléfono:</label>
+                        <input type="text" class="form-control" pattern="[0-9]{9}" required>
+                        <div class="valid-feedback">Válido.</div>
+                        <div class="invalid-feedback">Por favor, complete el correo electrónico correctamente.</div>
+                        <button type="submit" class="btn btn-success mb-2 mt-3">Siguiente</button>
+                    </form>
+                    </div>
+                </div>
+            </div><!-- fin div tab-content-->
+        </div>
+    </div>
+    <footer class="bg-dark fixed-bottom text-white text-center rounded ">
+        <div class="text-light">
+        <h3><u>Datos de contacto</u></h3>
+            <p><em>El Atelier de Jaime </em></p>
+            <p>Calle: Calle San Juan de Mata 8 28012 Madrid.</p>
+            <p>Teléfono: (+34) 91 558 88 44 Email: info@atelierjaime.es</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Alta de clientes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/tiendaonline.css"-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body class="bg-primary">
+    <div class="bg-warning text-white rounded fw-bold"  id="opciones">
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="1-alta_de_clientes.html" class="nav-link text-success disabled">Datos de cliente 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="2-informacion_adicional.html" class="nav-link text-success disabled">Información adicional  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                        <path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/>
+                    </svg>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="3-pedido.html" class="nav-link text-black"><u>Pedido</u></a>
+            </li>
+            <li class="nav-item">
+                <a href="4-datos_de_pago.html" class="nav-link text-secondary disabled">Datos de pago</a>
+            </li>
+        </ul>
+    </div>
+    <div class="container col-8 mt-5 text-secondary bg-light rounded">
+        <br>
+        <h2 class="mb-4">Pedido</h2>
+            <table class="table table-hover border-success align-middle">
+                <tr>
+                    <td>
+                        <input type="checkbox" class="btn-check btn btn-success" id="btn-check-outlined" autocomplete="off">
+                        <label class="btn btn-outline-success" for="btn-check-outlined">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </label>
+                    </td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/"><img src="images/kit-iniciacion.jpg" width="100px"></a></td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/">Kit de iniciación a la cerámica</a></td>
+                    <td>15,65 € </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="btn-check btn btn-success" id="btn-check-outlined 2" autocomplete="off">
+                        <label class="btn btn-outline-success" for="btn-check-outlined 2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </label>
+                    </td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/"><img src="images/cortador-puncheta.jpeg" width="100px"></a></td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/">Cortador-Puncheta</a></td>
+                    <td>4,55 €</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="btn-check btn btn-success" id="btn-check-outlined 3" autocomplete="off">
+                        <label class="btn btn-outline-success" for="btn-check-outlined 3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </label>
+                    </td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/"><img src="images/Pro_sponge_hand.jpeg" width="100px"></a></td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/">Esponja</a></td>
+                    <td>1,75 €</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="btn-check btn btn-success" id="btn-check-outlined 4" autocomplete="off">
+                        <label class="btn btn-outline-success" for="btn-check-outlined 4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </label>
+                    </td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/"><img src="images/rodillomadera.jpg" width="100"></a></td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/">Rodillo</a></td>
+                    <td>6,75 €</td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" class="btn-check btn btn-success" id="btn-check-outlined 5" autocomplete="off">
+                        <label class="btn btn-outline-success" for="btn-check-outlined 5">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-plus" viewBox="0 0 16 16">
+                                <path d="M9 5.5a.5.5 0 0 0-1 0V7H6.5a.5.5 0 0 0 0 1H8v1.5a.5.5 0 0 0 1 0V8h1.5a.5.5 0 0 0 0-1H9z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zm3.915 10L3.102 4h10.796l-1.313 7zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+                            </svg>
+                        </label>
+                    </td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/"><img src="images/xiem silicona.jpg" width="100"></a></td>
+                    <td><a href="https://www.marphil.com/producto/kit-ceramica-mhc-0839/">Xiem Silicona Perfilador</a></td>
+                    <td>6,75 €</td>
+                </tr>
+            </table>
+            <form action="4-datos_de_pago.html">
+            <button type="submit" class="btn btn-success mb-2">Siguiente</button>
+            </form>
+    </div>
+    <footer class="bg-dark fixed-bottom text-white text-center rounded ">
+        <div class="text-light">
+        <h3><u>Datos de contacto</u></h3>
+            <p><em>El Atelier de Jaime </em></p>
+            <p>Calle: Calle San Juan de Mata 8 28012 Madrid.</p>
+            <p>Teléfono: (+34) 91 558 88 44 Email: info@atelierjaime.es</p>
+        </div>
+    </footer>
+</body>
+</html>
